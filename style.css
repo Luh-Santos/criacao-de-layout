@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: #fbeaff;
+}
+
 .container {
   width: 96%;
   padding: 1%;
@@ -12,16 +17,72 @@
   text-align: center;
   gap: 10%;
 }
+
 .header {
   width: 25%;
 }
+
+.avatar {
+  border: 0;
+  cursor: pointer;
+  background-color: #fbeaff;
+}
+
+.popup-wrapper {
+  background-color: #a086ca;
+  position: fixed;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 1%;
+  border-radius: 10px;
+  display: none;
+}
+.fechar {
+  border: 0;
+  border-radius: 10px;
+  background-color: #a086ca;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+.popup {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #a086ca;
+}
+
+.popup > button {
+  padding: 10px;
+  margin: 10px;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #a691c7;
+  transition: 0.5s;
+}
+.popup > button:hover {
+  background-color: #c8b8e2;
+  transition: 0.5s;
+}
+
+.popup > button > img {
+  height: 10vw;
+}
+
 .main {
   width: 100%;
   height: fit-content;
   padding: 2%;
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: #a086ca;
+  border-radius: 10px;
 }
 .container-list {
   width: 100%;
@@ -31,7 +92,18 @@
   gap: 10px;
   padding: 2%;
 }
+
 .list {
-  background-color: white;
   width: 100%;
+}
+
+.list > .todo-list-dia {
+  background-color: #fefedf;
+  border-radius: 10px;
+  padding: 2%;
+}
+.list > .noite {
+  background-color: #d2e6ee;
+  border-radius: 10px;
+  padding: 2%;
 }

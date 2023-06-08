@@ -6,13 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="popup.js" defer></script>
     <title>Perfil</title>
 </head>
 
 <body>
+    <div class="popup-wrapper" id="popup-wrapper">
+
+        <div class="popup">
+            <button><img id="mudarAvatar1" src="assets/avatar1.png"></button>
+            <button><img id="mudarAvatar2" src="assets/avatar2.png"></button>
+            <button><img id="mudarAvatar3" src="assets/avatar3.png"></button>
+            <button><img id="mudarAvatar4" src="assets/avatar4.png"></button>
+            <button><img id="mudarAvatar5" src="assets/avatar5.png"></button>
+            <button><img id="mudarAvatar6" src="assets/avatar6.png"></button>
+            <button><img id="mudarAvatar7" src="assets/avatar7.png"></button>
+            <button><img id="mudarAvatar8" src="assets/avatar8.png"></button>
+            <button><img id="mudarAvatar9" src="assets/avatar9.png"></button>
+            <button><img id="mudarAvatar10" src="assets/avatar10.png"></button>
+            <button><img id="mudarAvatar11" src="assets/avatar11.png"></button>
+            <button><img id="mudarAvatar12" src="assets/avatar12.png"></button>
+        </div>
+        <button class="fechar" onclick="fecharPopup()"><img src="assets/x.png" width="30px"></button>
+    </div>
     <div class="container">
         <header class="header">
-            <img src="assets/avatar3.png">
+            <button class="avatar" onclick="abrirPopup()"><img id="avatarSelecionado" src="assets/avatar3.png"></button>
             <article>
                 <h1>Nome Genérico</h1>
                 <p>Lorem ipsum dolor sit amet. Est adipisci similique ut dolorem dolorem sit voluptate laborum ea reprehenderit porro ad ullam veritatis. Qui facere reprehenderit sed odio aspernatur ea maiores voluptas!</p>
@@ -26,13 +45,12 @@
                 </ul>
             </nav>
         </header>
-
         <main class="main">
             <h2>Lista de tarefas</h2>
             <section class="container-list">
                 <nav class="list">
-                    <h2>Dia</h2>
-                    <ul>
+                    <h2 class="todo-list-dia">Dia</h2>
+                    <ul class="dia">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
@@ -40,8 +58,8 @@
                     </ul>
                 </nav>
                 <nav class="list">
-                    <h2>Noite</h2>
-                    <ul>
+                    <h2 class="noite">Noite</h2>
+                    <ul class="noite">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
@@ -52,7 +70,5 @@
         </main>
     </div>
 </body>
-
-<script src="script.js"></script>
 
 </html>
