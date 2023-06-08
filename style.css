@@ -75,6 +75,28 @@ body {
   height: 10vw;
 }
 
+header button {
+  border: 0;
+}
+
+#texto-padrao {
+  display: block;
+  word-break: break-all;
+}
+
+#editar-nome {
+  display: none;
+}
+
+#nome-padrao {
+  display: block;
+  word-break: break-all;
+}
+
+#editar-texto {
+  display: none;
+}
+
 .main {
   width: 100%;
   height: fit-content;

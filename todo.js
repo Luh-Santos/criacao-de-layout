@@ -40,7 +40,7 @@ function addTaskNoite() {
     span.innerHTML = "X";
     li.appendChild(span);
   }
-  inputDia.value = "";
+  inputNoite.value = "";
 }
 
 listNoite.addEventListener(
@@ -51,7 +51,6 @@ listNoite.addEventListener(
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
     }
-    inputDia.value = "";
   },
   false
 );
