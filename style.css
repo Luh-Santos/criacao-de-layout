@@ -77,11 +77,20 @@ body {
 
 header button {
   border: 0;
+  background-color: #fbeaff;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 #texto-padrao {
   display: block;
   word-break: break-all;
+}
+
+header article button:hover {
+  background-color: #c8b8e2;
+  transition: 0.5s;
 }
 
 #editar-nome {
