@@ -103,7 +103,13 @@ body {
   padding: 2%;
 }
 
-ul li {
+.list > .todo-noite {
+  background-color: #8568b4;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.main ul li {
   text-align: left;
   margin-left: 20%;
   list-style-image: url(assets/uncheck.png);
@@ -111,7 +117,7 @@ ul li {
   cursor: pointer;
 }
 
-ul li.checked {
+.main ul li.checked {
   list-style-image: url(assets/checked.png);
   text-decoration: line-through;
 }

@@ -28,12 +28,13 @@
             <button><img id="mudarAvatar11" src="assets/avatar11.png"></button>
             <button><img id="mudarAvatar12" src="assets/avatar12.png"></button>
         </div>
-        <button class="fechar" onclick="fecharPopup()"><img src="assets/x.png" width="30px"></button>
+        <button class="fechar" onclick="fecharPopup()"><img src="assets/x.png" width="30px">></button>
     </div>
     <div class="container">
         <header class="header">
             <button class="avatar" onclick="abrirPopup()"><img id="avatarSelecionado" src="assets/avatar3.png"></button>
             <article>
+
                 <h1>Nome Genérico</h1>
                 <p>Lorem ipsum dolor sit amet. Est adipisci similique ut dolorem dolorem sit voluptate laborum ea reprehenderit porro ad ullam veritatis. Qui facere reprehenderit sed odio aspernatur ea maiores voluptas!</p>
             </article>
@@ -52,21 +53,21 @@
             <section class="container-list">
                 <nav class="list">
                     <h2 class="todo-dia">Dia</h2>
-                    <div>
+                    <div class="todo-dia">
                         <input type="text" id="todo-dia-input" placeholder="Adicione sua tarefa">
                         <button onclick="addTask()"><img src="assets/add.png" width="15px"></button>
                     </div>
-                    <ul class="" id="todo-dia-ul">
+                    <ul class="todo-dia" id="todo-dia-ul">
                     </ul>
 
                 </nav>
                 <nav class="list">
                     <h2 class="todo-noite">Noite</h2>
-                    <div>
+                    <div class="todo-noite">
                         <input type="text" class="todo-noite-input" id="todo-noite-input" placeholder="Adicione sua tarefa">
                         <button onclick="addTaskNoite()"><img src="assets/add.png" width="15px"></button>
                     </div>
-                    <ul class="todo-noite, todo-noite-ul" id="todo-noite-ul">
+                    <ul class="todo-noite todo-noite-ul" id="todo-noite-ul">
                     </ul>
 
                 </nav>
