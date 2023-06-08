@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="popup.js" defer></script>
+    <script type="text/javascript" src="todo.js" defer></script>
     <title>Perfil</title>
 </head>
 
@@ -45,26 +46,29 @@
                 </ul>
             </nav>
         </header>
+
         <main class="main">
             <h2>Lista de tarefas</h2>
             <section class="container-list">
                 <nav class="list">
-                    <h2 class="todo-list-dia">Dia</h2>
-                    <ul class="dia">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                    <h2 class="todo-dia">Dia</h2>
+                    <div>
+                        <input type="text" id="todo-dia-input" placeholder="Adicione sua tarefa">
+                        <button onclick="addTask()"><img src="assets/add.png" width="15px"></button>
+                    </div>
+                    <ul class="" id="todo-dia-ul">
                     </ul>
+
                 </nav>
                 <nav class="list">
-                    <h2 class="noite">Noite</h2>
-                    <ul class="noite">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
+                    <h2 class="todo-noite">Noite</h2>
+                    <div>
+                        <input type="text" class="todo-noite-input" id="todo-noite-input" placeholder="Adicione sua tarefa">
+                        <button onclick="addTaskNoite()"><img src="assets/add.png" width="15px"></button>
+                    </div>
+                    <ul class="todo-noite, todo-noite-ul" id="todo-noite-ul">
                     </ul>
+
                 </nav>
             </section>
         </main>

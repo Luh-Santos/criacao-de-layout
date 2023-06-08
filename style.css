@@ -97,11 +97,37 @@ body {
   width: 100%;
 }
 
-.list > .todo-list-dia {
+.list > .todo-dia {
   background-color: #fefedf;
   border-radius: 10px;
   padding: 2%;
 }
+
+ul li {
+  text-align: left;
+  margin-left: 20%;
+  list-style-image: url(assets/uncheck.png);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+ul li.checked {
+  list-style-image: url(assets/checked.png);
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  list-style-image: url(assets/checked.png);
+}
+
+ul li span {
+  margin-left: 30px;
+}
+ul li span:hover {
+  margin-left: 30px;
+  background-color: #c8b8e2;
+}
+
 .list > .noite {
   background-color: #d2e6ee;
   border-radius: 10px;
