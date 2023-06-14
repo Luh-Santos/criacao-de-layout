@@ -106,6 +106,14 @@ header article button:hover {
   display: none;
 }
 
+.menu {
+  margin-top: 10px;
+}
+
+.menu ul li {
+  margin: 8px;
+}
+
 .main {
   width: 100%;
   height: fit-content;
